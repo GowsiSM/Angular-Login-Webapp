@@ -1,0 +1,20 @@
+<div class="login-wrapper">
+     <div class="login-container">
+          <h1>Login</h1>
+          <form (ngSubmit)="login()" autocomplete="off">
+               <label for="username">Username</label>
+               <input id="username" type="text" [(ngModel)]="username" name="username" required>
+
+               <label for="password">Password</label>
+               <input id="password" type="password" [(ngModel)]="password" name="password" required>
+
+               <button type="submit">Login</button>
+          </form>
+
+          <p *ngIf="errorMessage">{{ errorMessage }}</p>
+
+          <div class="register-section">
+               <p>New User? <a routerLink="/register">Register Here</a></p>
+          </div>
+     </div>
+</div>

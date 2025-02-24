@@ -1,0 +1,131 @@
+.login-wrapper {
+     height: 97vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(to bottom, #1B3A4B, #006466);
+}
+
+.login-container {
+     width: 75%;
+     max-width: 400px;
+     padding: 20px;
+     border: 1px solid #272640;
+     border-radius: 10px;
+     background-color: #b4cfcf;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+     text-align: center;
+
+     a {
+          color: #4D194D;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease;
+
+          &:hover {
+               color: #006466;
+          }
+     }
+}
+
+h1 {
+     margin-bottom: 20px;
+     font-size: 30px;
+     color: #272640;
+     font-family: serif;
+}
+
+label {
+     font-size: large;
+     display: block;
+     margin: 7px 0 5px;
+     font-weight: bold;
+     color: #272640;
+     text-align: left;
+}
+
+input {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #1B3A4B;
+     border-radius: 5px;
+     font-size: 14px;
+     box-sizing: border-box;
+     background-color: #f7fff7;
+     transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+     border-color: #006466;
+     box-shadow: 0 0 15px rgba(13, 78, 143, 0.432);
+     outline: none;
+}
+
+button {
+     width: 100%;
+     padding: 12px;
+     background: linear-gradient(to right, #272640, #1B3A4B);
+     color: white;
+     border: none;
+     font-size: 20px;
+     border-radius: 6px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+     background: linear-gradient(to right, #1B3A4B, #006466);
+     transform: scale(1.03);
+}
+
+button:active {
+     transform: scale(0.98);
+}
+
+.error {
+     color: #090b96;
+     margin-top: 10px;
+     font-size: 14px;
+}
+
+.register-section {
+     text-align: center;
+     margin-top: 15px;
+     font-size: large;
+     font-weight: bold;
+
+     a {
+          color: #575157;
+          text-decoration: none;
+          font-weight: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+               color: #272640;
+          }
+     }
+
+     p {
+          color: #272640;
+     }
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html,
+body {
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+}
+
+body {
+     border: none;
+     outline: none;
+}
